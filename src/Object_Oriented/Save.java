@@ -4,12 +4,7 @@ import java.util.LinkedList;
 
 public class Save {
     //필드
-    //필드는 무조건 프라이빗
-    // !! 공부
-    //
     private LinkedList<String> list = new LinkedList<String>();
-    private Calculation cal = new Calculation();
-    // LinkedList 의 인스턴스화 기억하자
 
     //기본생성자 - 생략
 
