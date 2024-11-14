@@ -4,11 +4,15 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        // 필드
         int result;
         int[] gather = new int[4];
         Map<Integer,String> caL_sign_m = new HashMap<Integer,String>();
         String cal_str;
-        //Queue
+        Queue<int[]> log = new LinkedList<int[]>();
+
+        //
+
         Scanner scanner = new Scanner(System.in);
         caL_sign_m.put(1,"+");
         caL_sign_m.put(2,"-");
@@ -51,5 +55,10 @@ public class Main {
 
         System.out.println();
         System.out.println(num1+cal_str+num2+" = "+ gather[3]+" 입니다.");
+
+        log.add(gather);
+
+        // queue - test
+        //System.out.println(Arrays.toString(log.peek()));
     }
 }
